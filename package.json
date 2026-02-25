@@ -1,6 +1,9 @@
 {
   "name": "glenray-systems-root",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "postinstall": "npm --prefix crm install",
     "build": "npm --prefix crm run build",

@@ -1,0 +1,10 @@
+{
+  "name": "glenray-systems-root",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix crm install",
+    "build": "npm --prefix crm run build",
+    "dev": "npm --prefix crm run dev",
+    "start": "npm --prefix crm run start"
+  }
+}

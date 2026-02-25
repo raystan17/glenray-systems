@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
-export default function DashboardPage() {
-  const clients = db.clients.getAll();
-  const services = db.services.getAll();
-  const aiOutputs = db.aiOutputs.getAll();
-  const workflows = db.workflows.getAll();
+export default async function DashboardPage() {
+  const clients = await db.clients.getAll();
+  const services = await db.services.getAll();
+  const aiOutputs = await db.aiOutputs.getAll();
+  const workflows = await db.workflows.getAll();
 
   const activeEngagements = services.filter((s) => s.status === "active");
   const totalRevenue = services.filter((s) => s.status === "active" || s.status === "completed").reduce((sum, s) => sum + s.price, 0);

@@ -3,24 +3,21 @@ import { db } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
-export async function GET(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const client = db.clients.getById(id);
+export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+  const client = await db.clients.getById(params.id);
   if (!client) return NextResponse.json({ error: "Not found" }, { status: 404 });
   return NextResponse.json(client);
 }
 
-export async function PATCH(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export async function PATCH(request: NextRequest, { params }: { params: { id: string } }) {
   const body = await request.json();
-  const updated = db.clients.update(id, body);
+  const updated = await db.clients.update(params.id, body);
   if (!updated) return NextResponse.json({ error: "Not found" }, { status: 404 });
   return NextResponse.json(updated);
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const deleted = db.clients.delete(id);
+export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+  const deleted = await db.clients.delete(params.id);
   if (!deleted) return NextResponse.json({ error: "Not found" }, { status: 404 });
   return NextResponse.json({ success: true });
 }

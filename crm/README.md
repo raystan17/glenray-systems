@@ -62,7 +62,14 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Data Storage
 
-Data is stored in JSON files under `src/data/`:
+### Production (Vercel)
+This app now uses **Supabase** when these env vars are present:
+
+- `SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+
+### Local fallback
+If Supabase env vars are missing, it falls back to JSON files under `src/data/`:
 
 ```
 src/data/
@@ -72,13 +79,17 @@ src/data/
 └── ai-outputs.json
 ```
 
-This is intentional for simplicity. To upgrade to a real database:
-
-1. **Supabase** — Replace `src/lib/db.ts` functions with Supabase client calls
-2. **PostgreSQL** — Use Prisma ORM, replace db functions with Prisma queries
-3. **MongoDB** — Use Mongoose, replace db functions with model calls
-
-The interface stays the same — only `src/lib/db.ts` needs to change.
+### Supabase Setup (5 minutes)
+1. Create a Supabase project.
+2. In Supabase SQL editor, run:
+   - `supabase/schema.sql`
+   - `supabase/seed.sql` (optional demo data)
+3. In Vercel project settings, set:
+   - `CRM_PASSWORD=glenray2026`
+   - `SESSION_SECRET=<long-random-secret>`
+   - `SUPABASE_URL=<your-url>`
+   - `SUPABASE_SERVICE_ROLE_KEY=<your-service-role-key>`
+4. Redeploy.
 
 ---
 
@@ -182,13 +193,18 @@ crm/
 │   │   └── Modal.tsx               # Reusable modal
 │   ├── lib/
 │   │   ├── types.ts                # TypeScript types + service catalog
-│   │   ├── db.ts                   # JSON file database layer
+│   │   ├── db.ts                   # Supabase adapter + local JSON fallback
+│   │   ├── supabase.ts             # Supabase admin client
 │   │   └── auth.ts                 # Auth utilities
-│   └── data/                       # JSON data files (the "database")
+│   └── data/                       # Local JSON fallback data
+├── supabase/
+│   ├── schema.sql                  # DB schema
+│   └── seed.sql                    # Optional demo seed data
 ├── package.json
 ├── tailwind.config.ts
 ├── tsconfig.json
-└── .env.local                      # Password + API keys (not committed)
+├── .env.example                    # Required env vars template
+└── .env.local                      # Local env vars (not committed)
 ```
 
 ---

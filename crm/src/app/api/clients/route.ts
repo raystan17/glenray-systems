@@ -6,7 +6,7 @@ import type { Client } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  return NextResponse.json(db.clients.getAll());
+  return NextResponse.json(await db.clients.getAll());
 }
 
 export async function POST(request: NextRequest) {
@@ -26,6 +26,6 @@ export async function POST(request: NextRequest) {
     updatedAt: now,
   };
 
-  db.clients.create(client);
-  return NextResponse.json(client, { status: 201 });
+  const created = await db.clients.create(client);
+  return NextResponse.json(created, { status: 201 });
 }

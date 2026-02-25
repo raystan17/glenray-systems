@@ -6,7 +6,7 @@ import type { ServiceEngagement } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  return NextResponse.json(db.services.getAll());
+  return NextResponse.json(await db.services.getAll());
 }
 
 export async function POST(request: NextRequest) {
@@ -26,6 +26,6 @@ export async function POST(request: NextRequest) {
     createdAt: new Date().toISOString(),
   };
 
-  db.services.create(service);
-  return NextResponse.json(service, { status: 201 });
+  const created = await db.services.create(service);
+  return NextResponse.json(created, { status: 201 });
 }

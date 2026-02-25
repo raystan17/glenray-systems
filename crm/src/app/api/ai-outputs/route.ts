@@ -6,7 +6,7 @@ import type { AIOutput } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  return NextResponse.json(db.aiOutputs.getAll());
+  return NextResponse.json(await db.aiOutputs.getAll());
 }
 
 export async function POST(request: NextRequest) {
@@ -24,6 +24,6 @@ export async function POST(request: NextRequest) {
     completedAt: null,
   };
 
-  db.aiOutputs.create(output);
-  return NextResponse.json(output, { status: 201 });
+  const created = await db.aiOutputs.create(output);
+  return NextResponse.json(created, { status: 201 });
 }

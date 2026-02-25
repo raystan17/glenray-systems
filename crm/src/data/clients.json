@@ -1,0 +1,74 @@
+[
+  {
+    "id": "client-001",
+    "name": "Dr. Sarah Mitchell",
+    "company": "Bright Smile Dental",
+    "email": "sarah@brightsmile.com",
+    "phone": "(555) 201-3344",
+    "vertical": "healthcare",
+    "status": "active",
+    "notes": "3-location dental practice. Primary pain: no-shows costing ~$4K/month. Very engaged, wants to expand after initial project.",
+    "createdAt": "2026-01-15T10:00:00Z",
+    "updatedAt": "2026-02-20T14:30:00Z"
+  },
+  {
+    "id": "client-002",
+    "name": "Mark Henderson",
+    "company": "Henderson & Associates Law",
+    "email": "mark@hendersonlaw.com",
+    "phone": "(555) 887-1200",
+    "vertical": "professional_services",
+    "status": "active",
+    "notes": "12-person family law firm. Partners buried in email. Interested in Smart Inbox Manager + MeetingMind. Budget approved.",
+    "createdAt": "2026-01-22T09:00:00Z",
+    "updatedAt": "2026-02-18T11:00:00Z"
+  },
+  {
+    "id": "client-003",
+    "name": "Tony Russo",
+    "company": "Russo Plumbing & HVAC",
+    "email": "tony@russoplumbing.com",
+    "phone": "(555) 443-9100",
+    "vertical": "home_services",
+    "status": "proposal",
+    "notes": "25-person crew, 3 trucks. Missing 40%+ calls. Losing jobs to competitors with better online presence. High urgency.",
+    "createdAt": "2026-02-05T08:00:00Z",
+    "updatedAt": "2026-02-22T16:00:00Z"
+  },
+  {
+    "id": "client-004",
+    "name": "Lisa Chen",
+    "company": "Tranquil Therapy Group",
+    "email": "lisa@tranquiltherapy.com",
+    "phone": "(555) 302-7788",
+    "vertical": "healthcare",
+    "status": "discovery",
+    "notes": "8 therapists, 2 locations. Intake process is all paper. Patients arrive unprepared. Front desk overwhelmed.",
+    "createdAt": "2026-02-10T13:00:00Z",
+    "updatedAt": "2026-02-21T10:00:00Z"
+  },
+  {
+    "id": "client-005",
+    "name": "James Whitfield",
+    "company": "Whitfield Roofing Co.",
+    "email": "james@whitfieldroofing.com",
+    "phone": "(555) 671-4455",
+    "vertical": "home_services",
+    "status": "qualified",
+    "notes": "Family business, 15 years. 47 Google reviews vs competitor with 200+. Sends 30 quotes/month, follows up on maybe 5.",
+    "createdAt": "2026-02-18T11:00:00Z",
+    "updatedAt": "2026-02-23T09:00:00Z"
+  },
+  {
+    "id": "client-006",
+    "name": "Patricia Owens",
+    "company": "Owens & Blake Accounting",
+    "email": "pat@owensblake.com",
+    "phone": "(555) 510-3322",
+    "vertical": "professional_services",
+    "status": "lead",
+    "notes": "Inbound from LinkedIn post. 20-person accounting firm. Interested in document summarization during tax season.",
+    "createdAt": "2026-02-22T15:00:00Z",
+    "updatedAt": "2026-02-22T15:00:00Z"
+  }
+]

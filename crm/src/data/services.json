@@ -1,0 +1,54 @@
+[
+  {
+    "id": "svc-001",
+    "clientId": "client-001",
+    "serviceName": "No-Show Shield",
+    "serviceSlug": "no-show-shield",
+    "tier": "growth",
+    "price": 7500,
+    "status": "active",
+    "startDate": "2026-02-01",
+    "estimatedEndDate": "2026-02-28",
+    "currentPhase": "build",
+    "createdAt": "2026-01-28T10:00:00Z"
+  },
+  {
+    "id": "svc-002",
+    "clientId": "client-002",
+    "serviceName": "Smart Inbox Manager",
+    "serviceSlug": "smart-inbox-manager",
+    "tier": "growth",
+    "price": 9000,
+    "status": "active",
+    "startDate": "2026-02-10",
+    "estimatedEndDate": "2026-03-10",
+    "currentPhase": "onboard",
+    "createdAt": "2026-02-08T09:00:00Z"
+  },
+  {
+    "id": "svc-003",
+    "clientId": "client-001",
+    "serviceName": "RepBoost",
+    "serviceSlug": "repboost",
+    "tier": "starter",
+    "price": 2000,
+    "status": "pending",
+    "startDate": "2026-03-15",
+    "estimatedEndDate": "2026-04-01",
+    "currentPhase": "onboard",
+    "createdAt": "2026-02-20T14:00:00Z"
+  },
+  {
+    "id": "svc-004",
+    "clientId": "client-003",
+    "serviceName": "LeadRescue AI",
+    "serviceSlug": "leadrescue-ai",
+    "tier": "growth",
+    "price": 9500,
+    "status": "pending",
+    "startDate": "",
+    "estimatedEndDate": "",
+    "currentPhase": "onboard",
+    "createdAt": "2026-02-22T16:00:00Z"
+  }
+]

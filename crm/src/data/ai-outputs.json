@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ai-001",
+    "clientId": "client-001",
+    "type": "research_brief",
+    "title": "Prospect Research: Bright Smile Dental",
+    "status": "complete",
+    "content": "## Prospect Research Brief\n\n### Company Snapshot\nBright Smile Dental is a 3-location dental practice in the greater metro area with approximately 15 staff members. Established 12 years ago, they serve primarily families and cosmetic dentistry patients.\n\n### Pain Points\n1. No-show rate averaging 18% — costing ~$4,000/month in lost revenue\n2. Manual appointment reminder process (front desk calls each patient)\n3. Only 89 Google reviews across 3 locations vs. competitor average of 200+\n\n### Recommended Approach\nLead with No-Show Shield (Growth tier) to demonstrate immediate ROI. Follow up with RepBoost once trust is established.\n\n### Fit Score: 17/20",
+    "agentUsed": "Research Agent",
+    "createdAt": "2026-01-16T10:00:00Z",
+    "completedAt": "2026-01-16T10:05:00Z"
+  },
+  {
+    "id": "ai-002",
+    "clientId": "client-001",
+    "type": "proposal",
+    "title": "Proposal: No-Show Shield — Bright Smile Dental",
+    "status": "complete",
+    "content": "## Automation Proposal for Bright Smile Dental\n\n### We Heard You\nYou told us your team spends hours each week calling patients to remind them about appointments — and even then, you're losing $4,000/month to no-shows. That's nearly $50,000 a year walking out the door.\n\n### What We'll Build\nA smart reminder system that automatically texts and emails every patient at 48 hours, 24 hours, and 2 hours before their appointment. Patients confirm with one tap. Cancelled slots get offered to your waitlist automatically.\n\n### Your Investment\nGrowth Tier: $7,500\n- AI-powered SMS/email reminders\n- Smart timing optimization\n- Easy reschedule links\n- Waitlist auto-fill\n- 90-day support\n\n### Expected ROI\nCut no-shows by 50% = ~$25,000/year saved. Payback period: ~110 days.",
+    "agentUsed": "Proposal Agent",
+    "createdAt": "2026-01-20T14:00:00Z",
+    "completedAt": "2026-01-20T14:08:00Z"
+  },
+  {
+    "id": "ai-003",
+    "clientId": "client-003",
+    "type": "research_brief",
+    "title": "Prospect Research: Russo Plumbing & HVAC",
+    "status": "complete",
+    "content": "## Prospect Research Brief\n\n### Company Snapshot\nRusso Plumbing & HVAC is a 25-person home services company operating 3 service trucks. In business for 18 years, primarily residential service and repair.\n\n### Pain Points\n1. Missing 40%+ of incoming calls — estimated $8K–$12K/month in lost jobs\n2. Sends ~30 quotes/month, follows up on fewer than 5\n3. Only 47 Google reviews vs. main competitor with 200+\n\n### Recommended Approach\nLead with LeadRescue AI (Growth tier) for immediate revenue recovery. Bundle with QuoteChaser and ReviewEngine for maximum impact.\n\n### Fit Score: 19/20",
+    "agentUsed": "Research Agent",
+    "createdAt": "2026-02-06T09:00:00Z",
+    "completedAt": "2026-02-06T09:04:00Z"
+  },
+  {
+    "id": "ai-004",
+    "clientId": "client-005",
+    "type": "research_brief",
+    "title": "Prospect Research: Whitfield Roofing Co.",
+    "status": "pending",
+    "content": "",
+    "agentUsed": "Research Agent",
+    "createdAt": "2026-02-23T09:00:00Z",
+    "completedAt": null
+  },
+  {
+    "id": "ai-005",
+    "clientId": "client-002",
+    "type": "monthly_report",
+    "title": "February Report: Henderson & Associates",
+    "status": "generating",
+    "content": "",
+    "agentUsed": "Reporting Agent",
+    "createdAt": "2026-02-24T08:00:00Z",
+    "completedAt": null
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "wf-001",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "onboard",
+    "taskName": "Send welcome email & onboarding checklist",
+    "completed": true,
+    "dueDate": "2026-02-02",
+    "completedDate": "2026-02-01",
+    "assignee": "Account Lead"
+  },
+  {
+    "id": "wf-002",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "onboard",
+    "taskName": "Conduct kickoff call",
+    "completed": true,
+    "dueDate": "2026-02-03",
+    "completedDate": "2026-02-03",
+    "assignee": "Account Lead"
+  },
+  {
+    "id": "wf-003",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "onboard",
+    "taskName": "Collect all access credentials",
+    "completed": true,
+    "dueDate": "2026-02-04",
+    "completedDate": "2026-02-04",
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-004",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "build",
+    "taskName": "Set up AI tools and scheduler accounts",
+    "completed": true,
+    "dueDate": "2026-02-07",
+    "completedDate": "2026-02-06",
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-005",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "build",
+    "taskName": "Configure SMS/email reminder integrations",
+    "completed": false,
+    "dueDate": "2026-02-14",
+    "completedDate": null,
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-006",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "build",
+    "taskName": "Build waitlist auto-fill logic",
+    "completed": false,
+    "dueDate": "2026-02-18",
+    "completedDate": null,
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-007",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "test",
+    "taskName": "End-to-end testing with sample appointments",
+    "completed": false,
+    "dueDate": "2026-02-21",
+    "completedDate": null,
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-008",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "test",
+    "taskName": "Client UAT session",
+    "completed": false,
+    "dueDate": "2026-02-24",
+    "completedDate": null,
+    "assignee": "Account Lead"
+  },
+  {
+    "id": "wf-009",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "launch",
+    "taskName": "Deploy to production",
+    "completed": false,
+    "dueDate": "2026-02-26",
+    "completedDate": null,
+    "assignee": "Implementer"
+  },
+  {
+    "id": "wf-010",
+    "engagementId": "svc-001",
+    "clientId": "client-001",
+    "phase": "launch",
+    "taskName": "Client training session",
+    "completed": false,
+    "dueDate": "2026-02-28",
+    "completedDate": null,
+    "assignee": "Account Lead"
+  },
+  {
+    "id": "wf-011",
+    "engagementId": "svc-002",
+    "clientId": "client-002",
+    "phase": "onboard",
+    "taskName": "Send welcome email & onboarding checklist",
+    "completed": true,
+    "dueDate": "2026-02-11",
+    "completedDate": "2026-02-10",
+    "assignee": "Account Lead"
+  },
+  {
+    "id": "wf-012",
+    "engagementId": "svc-002",
+    "clientId": "client-002",
+    "phase": "onboard",
+    "taskName": "Conduct kickoff call",
+    "completed": false,
+    "dueDate": "2026-02-13",
+    "completedDate": null,
+    "assignee": "Account Lead"
+  }
+]

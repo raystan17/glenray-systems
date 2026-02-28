@@ -53,3 +53,9 @@ create index if not exists idx_services_client_id on services(client_id);
 create index if not exists idx_workflows_engagement_id on workflows(engagement_id);
 create index if not exists idx_workflows_client_id on workflows(client_id);
 create index if not exists idx_ai_outputs_client_id on ai_outputs(client_id);
+
+-- Allow backend (service_role) full access — RLS disabled for server-only CRM
+alter table clients disable row level security;
+alter table services disable row level security;
+alter table workflows disable row level security;
+alter table ai_outputs disable row level security;

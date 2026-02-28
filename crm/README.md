@@ -80,15 +80,15 @@ src/data/
 ```
 
 ### Supabase Setup (5 minutes)
+**→ See `DEPLOY.md` in repo root for the full checklist.** Quick version:
+
 1. Create a Supabase project.
 2. In Supabase SQL editor, run:
    - `supabase/schema.sql`
    - `supabase/seed.sql` (optional demo data)
-3. In Vercel project settings, set:
-   - `CRM_PASSWORD=glenray2026`
-   - `SESSION_SECRET=<long-random-secret>`
-   - `SUPABASE_URL=<your-url>`
-   - `SUPABASE_SERVICE_ROLE_KEY=<your-service-role-key>`
+3. In Vercel project settings:
+   - Set **Root Directory** to `crm`
+   - Add env vars: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `CRM_PASSWORD`, `SESSION_SECRET`
 4. Redeploy.
 
 ---

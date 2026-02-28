@@ -3,17 +3,35 @@ import path from "path";
 import type { Client, ServiceEngagement, WorkflowTask, AIOutput } from "./types";
 import { getSupabaseAdmin, isSupabaseConfigured } from "./supabase";
 
-const DATA_DIR = path.join(process.cwd(), "src", "data");
+const BUNDLED_DATA = path.join(process.cwd(), "src", "data");
+const VERCEL_TMP_DATA = "/tmp/glenray-crm-data";
+const FILES = ["clients.json", "services.json", "workflows.json", "ai-outputs.json"] as const;
+
+function getDataDir(): string {
+  if (process.env.VERCEL && !isSupabaseConfigured()) {
+    if (!fs.existsSync(VERCEL_TMP_DATA)) fs.mkdirSync(VERCEL_TMP_DATA, { recursive: true });
+    for (const f of FILES) {
+      const src = path.join(BUNDLED_DATA, f);
+      const dst = path.join(VERCEL_TMP_DATA, f);
+      if (fs.existsSync(src) && !fs.existsSync(dst)) fs.copyFileSync(src, dst);
+    }
+    return VERCEL_TMP_DATA;
+  }
+  return BUNDLED_DATA;
+}
 
 function readJSON<T>(filename: string): T[] {
-  const filePath = path.join(DATA_DIR, filename);
+  const dir = getDataDir();
+  const filePath = path.join(dir, filename);
   if (!fs.existsSync(filePath)) return [];
   const raw = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(raw);
 }
 
 function writeJSON<T>(filename: string, data: T[]): void {
-  const filePath = path.join(DATA_DIR, filename);
+  const dir = getDataDir();
+  const filePath = path.join(dir, filename);
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
 }
 
